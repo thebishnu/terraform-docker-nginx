@@ -3,3 +3,9 @@ variable "container_name" {
   type        = string
   default     = "docker-with-terraform"
 }
+
+variable "nginx_port" {
+  description = "Port to expose Nginx on host"
+  type        = number
+  default     = 8888
+}
