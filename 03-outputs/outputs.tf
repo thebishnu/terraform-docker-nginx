@@ -7,3 +7,8 @@ output "container_id" {
   description = "ID of the Docker container"
   value       = docker_container.nginx.id
 }
+
+output "nginx_url" {
+  description = "URL of the Nginx container"
+  value       = "http://localhost:${var.nginx_port}"
+}
