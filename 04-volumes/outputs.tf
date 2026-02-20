@@ -9,6 +9,6 @@ output "container_id" {
 }
 
 output "nginx_url" {
-  description = "URL of the Nginx container"
-  value       = "http://localhost:${var.nginx_port}"
+  description = "The URL to access the app"
+  value       = "http://localhost:${var.external_port}"
 }

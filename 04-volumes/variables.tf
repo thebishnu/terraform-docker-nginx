@@ -1,11 +1,11 @@
 variable "container_name" {
-  description = "Value of the name for the Docker container"
+  description = "Name for the Docker container"
   type        = string
   default     = "docker-with-terraform"
 }
 
-variable "nginx_port" {
-  description = "Port to expose Nginx on host"
+variable "external_port" {
+  description = "The port the webserver will listen on"
   type        = number
   default     = 8888
 }
