@@ -13,4 +13,6 @@ provider "docker" {
 
 module "nginx-web-module" {
   source = "../nginx-web-module"
+  container_name = "nginx-web-server"
+  external_port  = 9000
 }

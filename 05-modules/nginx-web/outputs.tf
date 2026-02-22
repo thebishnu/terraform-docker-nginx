@@ -8,7 +8,7 @@ output "container_id" {
   value       = module.nginx-web-module.container_id
 }
 
-output "nginx_url" {
+output "access_link" {
   description = "The URL to access the app"
   value       = module.nginx-web-module.nginx_url
 }
