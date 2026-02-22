@@ -16,7 +16,9 @@ locals {
 }
 
 module "nginx-web-module" {
-  source         = "../../../05-modules/nginx-web-module"
-  container_name = "nginx-staging"
-  external_port  = 8080
+  source = "../../../05-modules/nginx-web-module"
+
+  # Pass variables to the module
+  container_name = var.container_name
+  external_port  = var.external_port
 }
