@@ -16,7 +16,7 @@ locals {
 }
 
 module "nginx-web-module" {
-  source         = "../../../05-modules/nginx-web-module"
+  source = "../../../05-modules/nginx-web-module"
 
   # Pass variables to the module
   container_name = var.container_name
