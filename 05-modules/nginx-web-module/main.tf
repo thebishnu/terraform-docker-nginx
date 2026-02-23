@@ -9,7 +9,7 @@ terraform {
 
 # Pulls the image
 resource "docker_image" "nginx" {
-  name         = "nginx:latest"
+  name         = var.image_name
   keep_locally = false
 }
 
